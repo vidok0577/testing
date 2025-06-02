@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Card Validator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1><i class="fas fa-credit-card"></i> Credit Card Validator</h1>
+      <p>Check validity and detect payment system</p>
+    </div>
+    
+    <div class="card-body">
+      <div class="card-icons">
+      </div>
+      
+      <div class="input-group">
+        <input type="text" class="card-input" placeholder="Enter credit card number" maxlength="19">
+      </div>
+      
+      <button class="validate-btn">Click to Validate</button>
+      
+      <div class="validation-result">
+      </div>
+      
+      <div class="luhn-explanation" id="luhnExplanation">
+        <h3><i class="fas fa-info-circle"></i> How Validation Works</h3>
+        <p>The Luhn algorithm is used to validate credit card numbers. This mathematical formula checks the number against a simple checksum to detect errors.</p>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>This tool uses client-side validation only.</p>
+      <p>No card data is sent to any server.</p>
+      <p>Images used under fair use for educational purposes.</p>
+    </div>
+  </div>
+
+</body>
+</html>
